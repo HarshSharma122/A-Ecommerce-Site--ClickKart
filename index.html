@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utilis.css" />
+    <link rel="stylesheet" href="product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="container">
+        <!-- THis is header-01 star here -->
+        <div class="header-01">
+          <div class="logo">
+            <a href=""><img src="./image/logo.png" alt="logo" /></a>
+          </div>
+          <nav class="navbar">
+            <a href="#" id="men">men</a>
+            <a href="#" id="women">women</a>
+            <a href="#" id="kids">kids</a>
+            <a href="#" id="shoes">Shoes</a>
+          </nav>
+          <div class="search_input">
+            <img src="./image/search-interface-symbol.png" alt="" />
+            <input
+              type="text"
+              placeholder="Search for products, brands and more"
+              id="input"
+              autocomplete="off"
+            />
+          </div>
+          <div class="account_section">
+            <div class="user">
+              <img src="./image/user.png" alt="" />
+              <a class="profile" id="profile">Profile</a>
+              <!-- for Profile slide start here -->
+              <div class="profile_section">
+                <div class="first">
+                  <h3>
+                    Welcome
+                    <h3 class="username"></h3>
+                  </h3>
+                  <p>To access account and manage orders</p>
+
+                  <button id="LogSign">Login/signup</button>
+                </div>
+                <div class="second">
+                  <p>Ordres</p>
+                  <p>Contact Us</p>
+                </div>
+                <div class="third">
+                  <h4>Coupen</h4>
+                  <h4>Saved Address</h4>
+                </div>
+              </div>
+              <!-- for Profile slide end here -->
+            </div>
+            <div class="bag" id="bag">
+              <img src="./image/bag.png" alt="" />
+              <a>Bag</a>
+            </div>
+          </div>
+
+          <!-- For Bag part start -->
+          <div class="bag_section none">
+            <img src="./image/close.png" id="closebag" alt="" />
+
+            <div class="pro_in_bag_details">
+              <div class="item_boxes">
+                <div class="item-box">
+                  <!-- <img src="./image/menWear/asset 10.jpeg" alt="" />
+                  <div class="box_ino">
+                    <div class="product_name">U.S Polo Assn</div>
+
+                    <div class="price_t">675₹</div>
+                  </div> -->
+                </div>
+
+              </div>
+
+              <div class="total">
+                <!-- <h3>Your total is: 234₹</h3> -->
+              </div>
+              
+              <button id="checkout">CheckOut</button>
+
+            </div>
+          </div>
+          <!-- For Bag part  end here -->
+        </div>
+        <!-- THis is header-01 end here -->
+
+        <section class="cloths_view">
+          <div class="category_section">
+            <h1>Category</h1>
+            <div class="category">
+              <div>
+                <input type="checkbox" name="checkbox" />
+                <label for="checkbox">T-shirt</label>
+              </div>
+              <div>
+                <input type="checkbox" name="checkbox" />
+                <label for="checkbox">Shirt</label>
+              </div>
+              <div>
+                <input type="checkbox" name="checkbox" />
+                <label for="checkbox">Paint</label>
+              </div>
+              <div>
+                <input type="checkbox" name="checkbox" />
+                <label for="checkbox">Shoes</label>
+              </div>
+              <div>
+                <input type="checkbox" name="checkbox" />
+                <label for="checkbox">Girl's Shoes</label>
+              </div>
+              <div>
+                <input type="checkbox" name="checkbox" />
+                <label for="checkbox">Girl's top</label>
+              </div>
+              <div>
+                <input type="checkbox" name="checkbox" />
+                <label for="checkbox">Girl's Ethinic Wear</label>
+              </div>
+            </div>
+          </div>
+          <div class="cloths_section">
+            <div class="boxes"></div>
+          </div>
+        </section>
+
+        <!-- THis is login and signup page -->
+        <section id="accountStep" class="accountStep none">
+          <div class="signuppage">
+            <h1 class="heading">Create a Account</h1>
+
+            <div class="user_info">
+              <label for="name">Your name</label>
+              <input type="text" name="name" id="name" />
+              <label for="text">Mobile number</label>
+
+              <input type="text" name="text" id="number" />
+              <h6 id="error"></h6>
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" />
+
+              <h4>*Password minimum length is 5 digit</h4>
+
+              <button id="createAcc" class="createAcc">Create Account</button>
+            </div>
+
+            <div class="redirect">
+              <p>Already have an account <a id="login">Login</a></p>
+            </div>
+          </div>
+          <div class="loginpage none">
+            <h1 class="heading">Login to your Account</h1>
+            <div class="user_info">
+              <label for="text">Mobile number</label>
+              <input type="text" name="text" id="numberlogin" />
+              <label for="password">Password</label>
+              <input type="password" name="password" id="passwordlogin" />
+
+              <button id="openPers" class="openPers">Login</button>
+            </div>
+
+            <div class="redirect">
+              <p>Create a account <a id="signin">Signin</a></p>
+            </div>
+          </div>
+        </section>
+        <!-- This is login and signup page ends here -->
+
+        <section class="showCaseProduct none">
+          <button id="close"><img src="./image/leftArrow.png" alt="" /></button>
+          <div class="left-part">
+            <!-- <img src="./image/menWear/asset 4.jpeg" alt=""> -->
+          </div>
+          <div class="right-part">
+            <!-- <div class="info_product">
+                  <h1 class="name">Nautica</h1>
+                  <h4 class="cate_pro">Shirt</h4>
+
+                  <h2 class="priceTag">1000₹</h2>
+              </div>
+              <div class="size-details">
+                <h3>Select Size</h3>
+                <div class="size_button">
+                  <button>S</button>
+                  <button>M</button>
+                  <button>L</button>
+                  <button>XL</button>
+                  <button>XXL</button>
+                </div>
+              </div>
+              <button id="Buy" class="btn">Buy Now</button>
+              <button id="addCart" class="btn">Add to cart</button> -->
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script src="utility.js"></script>
+  </body>
+</html>

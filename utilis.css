@@ -1,0 +1,23 @@
+@media (max-width: 600px) {
+  .search_input {
+    display: none;
+  }
+  .container .header-01 .logo img {
+    width: 45px;
+  }
+  .account_section .user img {
+    width: 16px;
+  }
+  .account_section .user a,
+  .bag a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 10px;
+    margin-top: 3px;
+  }
+
+  .account_section .bag img {
+    width: 16px;
+  }
+}

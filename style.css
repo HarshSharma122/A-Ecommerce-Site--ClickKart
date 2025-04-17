@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Assistant", serif !important;
+}
+/*______________Header-01 start here___________________*/
+.main_container .container .header-01 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 6% 15px 6%;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 5px rgba(225 216 216);
+}
+.container .header-01 .logo a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.container .header-01 .logo img {
+  width: 75px;
+}
+
+.navbar a {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(40, 44, 63);
+  margin-right: 22px;
+  padding-bottom: 29px;
+  text-transform: uppercase;
+}
+.navbar a:hover {
+  border-bottom: 2px solid rgb(238, 95, 115);
+  border-width: 3px;
+}
+.search_input {
+  background-color: #dfdfdf80;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 26vw;
+  height: 7vh;
+  border-radius: 7px;
+}
+
+.search_input img {
+  width: 14px;
+  margin: 0px 10px 0px 19px;
+}
+.search_input input {
+  background: none;
+  border: none;
+  width: 100%;
+  font-size: 14px;
+}
+.search_input input:focus {
+  outline: none;
+}
+.account_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.account_section .user,
+.bag {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+}
+.account_section .user {
+  padding-right: 32px;
+}
+.account_section .user img {
+  width: 18px;
+}
+.account_section .user a,
+.bag a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.account_section .bag img {
+  width: 18px;
+}
+.username {
+  color: #9d0a0a;
+}
+
+/*______________Header-01 end here___________________*/
+/*______________ end here___________________*/
+
+/*______________ shop_by_category start here___________________*/
+.cloths_view {
+  display: flex;
+  margin-top: 70px;
+}
+.category_section {
+  flex: 20%;
+  border: 1px solid #ebe5e5;
+
+  padding: 21px 0px 29px 23px;
+  height: 75vh;
+}
+.category_section h1 {
+  color: rgb(40, 44, 63);
+  font-size: 19px;
+  font-weight: 700;
+  padding-bottom: 25px;
+}
+.category {
+}
+.category div {
+  margin-bottom: 6px;
+  color: rgb(40, 44, 63);
+}
+.category div input {
+}
+.category div label {
+  padding-left: 12px;
+}
+
+.cloths_section {
+  flex: 80%;
+  border: 1px solid #dfdfdf80;
+  padding: 34px;
+}
+
+.cloths_section .boxes {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.boxes .box {
+  margin-bottom: 32px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.boxes .box:hover {
+  #cart {
+    display: block;
+  }
+}
+.box .image {
+}
+.image img {
+  width: 80%;
+}
+.box .desc {
+  margin-left: 8px;
+}
+.desc h3 {
+  color: rgb(40, 44, 63);
+  font-size: 16px;
+}
+.desc p {
+  color: #585252;
+  font-size: 14px;
+}
+.box a {
+  text-decoration: none;
+  list-style: none;
+}
+#price {
+  color: rgb(40, 44, 63);
+  font-size: 15px;
+}
+
+#cart {
+  height: 33px;
+  width: 80%;
+  cursor: pointer;
+  font-size: 15px;
+  background: none;
+  border: 1px solid #ebe5e5;
+  display: none;
+}
+
+/*_______Profile section start here_________ */
+.profile_section {
+  position: absolute;
+  background: #ffff;
+  box-shadow: 2px 1px 1px 1px #f5f5f5;
+  top: 80px;
+  width: 22%;
+  padding: 12px 0px 12px 28px;
+  right: 27px;
+  height: 50vh;
+  display: none;
+}
+.show {
+  display: block !important;
+}
+.none {
+  display: none !important;
+}
+
+.profile:hover {
+}
+.profile_section .first {
+  line-height: 27px;
+  margin-bottom: 15px;
+}
+.first h3 {
+  font-size: 16px;
+}
+.first p {
+  font-size: 14px;
+}
+#LogSign {
+  width: 130px;
+  height: 37px;
+  border: 1px solid #d7d2d2;
+  color: red;
+  background: none;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 11px;
+}
+.profile_section .second {
+  border-top: 1px solid #dfdfdf;
+  padding-top: 12px;
+  padding-bottom: 15px;
+}
+.second p {
+  font-weight: 300;
+  font-size: 16px;
+}
+.profile_section .third {
+  border-top: 1px solid #dfdfdf;
+  padding-top: 12px;
+}
+.third h4 {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+/*  accountStep section*/
+.accountStep {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 450px;
+}
+.heading {
+  font-size: 32px;
+  padding-bottom: 18px;
+}
+.signuppage .user_info {
+  display: flex;
+  flex-direction: column;
+}
+.loginpage .user_info {
+  display: flex;
+  flex-direction: column;
+}
+.user_info label {
+  padding-bottom: 11px;
+  font-weight: 600;
+}
+.user_info input {
+  margin-bottom: 11px;
+  width: 122%;
+  height: 29px;
+  font-size: 17px;
+  padding-left: 2px;
+}
+.createAcc,
+.openPers {
+  width: 122%;
+  height: 41px;
+  cursor: pointer;
+  background-color: #9d0a0a;
+  color: antiquewhite;
+  font-size: 17px;
+  border: none;
+}
+.createAcc,
+.openPers:hover {
+  background-color: #9d0a0ac9;
+}
+
+.signuppage .redirect {
+  margin-top: 26px;
+}
+.loginpage .redirect {
+  margin-top: 26px;
+}
+#signin {
+  color: #9d0a0a;
+  font-weight: 800;
+  border-bottom: 2px solid #9d0a0a;
+  cursor: pointer;
+}
+#login {
+  color: #9d0a0a;
+  font-weight: 800;
+  border-bottom: 2px solid #9d0a0a;
+  cursor: pointer;
+}
+
+/*  accountStep section*/
+
+.bag_section {
+  position: absolute;
+  top: 90px;
+  right: 0;
+  background: gainsboro;
+  width: 265px;
+  height: 100vh;
+  padding-top: 12px;
+}
+
+
+.bag_section img {
+  width: 16px;
+  display: flex;
+  cursor: pointer;
+  float: right;
+  margin-right: 12px;
+}
+
+.pro_in_bag_details {
+}
+.pro_in_bag_details .item_boxes {
+  height: 70vh;
+  overflow-y: scroll;
+}
+.pro_in_bag_details .item_boxes::-webkit-scrollbar{
+  display: none;
+}
+.item_boxes .item-box {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.item-box img {
+  width: 82px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+.box_ino {
+  display: flex;
+  flex-direction: column;
+}
+.item-box .box_ino .product_name {
+  font-size: 18px;
+  font-weight: 600;
+}
+.item-box .box_ino .price_t {
+  font-size: 19px;
+  font-weight: 900;
+  margin-top: 11px;
+}
+
+.total
+{
+  margin-bottom: 12px;
+  margin-left: 12px;
+}
+#checkout
+{
+  background-color: #9d0a0a;
+  color: #fff;
+  border: none;
+  width: 90px;
+  height: 34px;
+  margin-left: 12px;
+  cursor: pointer;
+}
